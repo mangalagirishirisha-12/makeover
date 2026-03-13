@@ -1,0 +1,77 @@
+.card img{
+height:260px;
+object-fit:cover;
+border-top-left-radius:18px;
+border-top-right-radius:18px;
+}
+
+.navbar{
+background:#4b0b0bea;
+}
+
+.navbar-brand{
+color:rgba(26, 3, 3, 0.47)!important;
+font-size:24px;
+font-weight:bold;
+}
+
+.hero{
+height:330px;
+background:
+linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.3)),
+url("https://images.unsplash.com/photo-1596462502278-27bfdc403348");
+background-size:cover;
+display:flex;
+align-items:center;
+justify-content:center;
+color:white;
+text-align:center;
+}
+
+.category{
+text-align:center;
+margin-top:25px;
+}
+
+.category button{
+margin:6px;
+padding:8px 20px;
+border:none;
+border-radius:25px;
+background:#ffd6e7;
+color:#4b0b0bea;
+font-weight:500;
+}
+
+.card{
+border:none;
+border-radius:18px;
+transition:.35s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+box-shadow:0 15px 30px rgba(0,0,0,.15);
+}
+
+.price{
+color:#4b0b0bea;
+font-weight:bold;
+font-size:18px;
+}
+
+.btn-buy{
+background:#4b0b0bea;
+color:white;
+border:none;
+border-radius:20px;
+padding:7px 20px;
+}
+
+footer{
+background:#4b0b0bea;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:60px;
+}

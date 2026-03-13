@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Delivery Address</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<<style>
+
+body{
+background-image: url("bggg.jpg");
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+font-family:Segoe UI;
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+}
+
+.box{
+background:white;
+padding:40px;
+border-radius:20px;
+box-shadow:0 10px 30px rgba(0,0,0,.15);
+width:350px;
+}
+
+input{
+width:100%;
+padding:10px;
+margin:8px 0;
+}
+
+button{
+width:100%;
+padding:10px;
+background:#4b0b0b;
+color:white;
+border:none;
+border-radius:20px;
+}
+
+</style>
+
+</style>
+
+</head>
+
+<body>
+
+<div class="box">
+
+<h3>Delivery Details</h3>
+
+<input type="text" id="name" placeholder="Full Name">
+
+<input type="text" id="phone" placeholder="Phone Number">
+
+<input type="text" id="address" placeholder="Address">
+
+<input type="text" id="city" placeholder="City">
+
+<input type="text" id="pincode" placeholder="Pincode">
+
+<button onclick="saveAddress()">Place Order</button>
+
+</div>
+
+
+<script>
+
+function saveAddress(){
+
+let name = document.getElementById("name").value;
+let phone = document.getElementById("phone").value;
+let address = document.getElementById("address").value;
+let city = document.getElementById("city").value;
+let pincode = document.getElementById("pincode").value;
+
+
+
+if(name=="" || phone=="" || address=="" || city=="" || pincode==""){
+alert("Please fill all delivery details");
+return;
+}
+
+
+
+let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+if(cart.length == 0){
+alert("Your cart is empty");
+window.location.href="website.html";
+return;
+}
+
+
+let user = {
+name:name,
+phone:phone,
+address:address,
+city:city,
+pincode:pincode
+};
+
+localStorage.setItem("delivery",JSON.stringify(user));
+
+window.location.href="success.html";
+
+}
+
+</script>
+
+</body>
+</html>

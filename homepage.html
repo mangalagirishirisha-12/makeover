@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>LuxeGlow</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+
+body{
+margin:0;
+block-size:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+
+background-image:url("bggg.jpg");
+background-size:cover;
+background-position:center;
+background-repeat:no-repeat;
+
+font-family:'Poppins',sans-serif;
+color:#35200b;
+position:relative;
+}
+
+/* Dark overlay for premium look */
+
+body::before{
+content:"";
+position:absolute;
+inset-block-start:0;
+inset-inline-start:0;
+inline-size:100%;
+block-size:100%;
+background:rgba(30,15,10,0.5);
+z-index:-1;
+}
+
+.hero{
+background:rgb(255, 255, 255);
+backdrop-filter:blur(12px);
+padding:60px;
+border-radius:25px;
+inline-size:650px;
+text-align:center;
+box-shadow:0 20px 50px rgb(57, 12, 12);
+border:1px solid rgb(244, 235, 235);
+}
+
+h1{
+font-family:'Playfair Display',serif;
+font-size:48px;
+color:#000000;
+margin-block-end:20px;
+letter-spacing:1px;
+}
+
+p{
+font-size:16px;
+line-height:1.6;
+opacity:0.9;
+}
+
+.features{
+margin-block-start:25px;
+margin-block-end:30px;
+}
+
+.features p{
+margin:6px 0;
+}
+
+.enter-btn{
+background:linear-gradient(45deg,#1b0a04,#a1887f);
+border:none;
+padding:14px 40px;
+border-radius:40px;
+font-size:18px;
+color:rgb(45, 11, 11);
+letter-spacing:1px;
+transition:0.35s;
+box-shadow:0 8px 20px rgba(0,0,0,0.4);
+cursor:pointer;
+}
+
+.enter-btn:hover{
+transform:translateY(-3px);
+box-shadow:0 12px 30px rgba(0,0,0,0.6);
+background:linear-gradient(45deg,#ede8e6,#bcaaa4);
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="hero">
+
+<h1>LuxeGlow</h1>
+
+<p>
+Welcome to LuxeGlow — a modern beauty shopping experience designed for makeup lovers.
+Explore elegant cosmetics, add your favorites to the cart, and enjoy a smooth shopping journey.
+</p>
+
+<div class="features">
+<p>🤎 Discover premium beauty products</p>
+<p>🛒 Add items to your cart</p>
+<p>✨ Place orders easily</p>
+</div>
+
+<a href="website.html">
+<button class="enter-btn">Enter Shop</button>
+</a>
+
+</div>
+
+</body>
+</html>
